@@ -30,9 +30,9 @@ export class App extends Component {
         ],
         filter: '',
       });
-      // console.log("setState has been called therefore componentDidUpdate will be called?");
+      console.log("setState has been called therefore componentDidUpdate will be called?");
     }
-    // console.log("componentDidMount");
+    console.log("componentDidMount");
   };
 
   componentDidUpdate(_prevProps, prevState) {
@@ -40,7 +40,7 @@ export class App extends Component {
     if (contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(contacts));
     }
-    // console.log("componentDidUpdate");
+    console.log("componentDidUpdate");
   };
 
   addContact = newContact => {
@@ -69,7 +69,7 @@ export class App extends Component {
   };
 
   render() {
-    // console.log("render");
+    console.log("render");
     const {contacts, filter} = this.state;
     return (
     <div>
