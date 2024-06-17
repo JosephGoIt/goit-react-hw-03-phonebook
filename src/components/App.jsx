@@ -30,7 +30,7 @@ export class App extends Component {
         ],
         filter: '',
       });
-      // console.log("setState has been called therefore componentDidUpdate will be called");
+      // console.log("setState has been called therefore componentDidUpdate will be called?");
     }
     // console.log("componentDidMount");
   };
@@ -69,6 +69,7 @@ export class App extends Component {
   };
 
   render() {
+    // console.log("render");
     const {contacts, filter} = this.state;
     return (
     <div>
